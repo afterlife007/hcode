@@ -11,8 +11,8 @@ use Rain\Tpl;
 
 
 class Mailer {
-    const USERNAME = "thiago@agenciacarvalho.com.br";
-    const PASSWORD = "Senha789";
+    const USERNAME = "thiago@vocedigitalpropaganda.com.br";
+    const PASSWORD = "senha007";
     const NAME_FROM = "PHP Ecommerce";
     private $mail;
     public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
@@ -40,8 +40,8 @@ class Mailer {
         );
         $this->mail->SMTPDebug = 1;
         $this->mail->Debugoutput = 'html';
-        $this->mail->Host = 'mail.agenciacarvalho.com.br';
-        $this->mail->Port = 587;
+        $this->mail->Host = 'mail.vocedigitalpropaganda.com.br';
+        $this->mail->Port = 25;
         $this->mail->SMTPSecure = 'tls';
         $this->mail->SMTPAuth = true;
         $this->mail->Username = Mailer::USERNAME;
